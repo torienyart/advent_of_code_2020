@@ -32,3 +32,17 @@
 #   - start an iteration through the array, take 2020 minus each element to find the necessary pair 
 #   - search the array for the necessary pair
 #   - if found, multiply the two together for a final answer
+
+
+# --- Code ---
+numbers_array = File.readlines("./info/day_1.txt", chomp: true)
+
+numbers_array.each do |number|
+  necessary_pair = 2020 - number.to_i
+  if numbers_array.include?(necessary_pair.to_s)
+    p necessary_pair * number.to_i
+    return
+  end
+end
+
+
