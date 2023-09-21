@@ -24,3 +24,11 @@
 # Of course, your expense report is much larger. Find the two entries that sum to 2020; what do you get if you multiply them together?
 
 # --- Psuedocode ---
+# input: a file of numbers separated by new lines
+# output: a single number that multiplies two numbers that sum to 2020
+
+# - read in the file and put each line into an array
+# - iterate through the array to find the numbers that sum to 2020
+#   - start an iteration through the array, take 2020 minus each element to find the necessary pair 
+#   - search the array for the necessary pair
+#   - if found, multiply the two together for a final answer
